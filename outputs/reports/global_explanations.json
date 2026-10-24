@@ -1,0 +1,100 @@
+{
+  "top_permutation_features": [
+    {
+      "feature": "Init_Win_bytes_forward",
+      "importance_mean": 0.18431735998827237,
+      "importance_std": 0.004337556145184124
+    },
+    {
+      "feature": "Flow Bytes/s",
+      "importance_mean": 0.09698327416837096,
+      "importance_std": 0.005781318124929893
+    },
+    {
+      "feature": "Avg Fwd Segment Size",
+      "importance_mean": 0.08719056716185825,
+      "importance_std": 0.0024800505123986345
+    },
+    {
+      "feature": "Fwd Packet Length Mean",
+      "importance_mean": 0.06050097479803607,
+      "importance_std": 0.0024362985513850014
+    },
+    {
+      "feature": "Fwd Header Length.1",
+      "importance_mean": 0.006443739848676322,
+      "importance_std": 0.0006062198562792676
+    },
+    {
+      "feature": "Fwd Header Length",
+      "importance_mean": 0.004767199041566883,
+      "importance_std": 0.0008329149700338434
+    },
+    {
+      "feature": "Fwd IAT Min",
+      "importance_mean": 0.002335784866124335,
+      "importance_std": 0.00018001990456143827
+    },
+    {
+      "feature": "Bwd IAT Max",
+      "importance_mean": 0.0008105268708600066,
+      "importance_std": 0.00017993680307952788
+    },
+    {
+      "feature": "Destination Port",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    },
+    {
+      "feature": "Average Packet Size",
+      "importance_mean": 0.0,
+      "importance_std": 0.0
+    }
+  ],
+  "top_shap_features": [
+    {
+      "feature": "Fwd Packet Length Mean",
+      "mean_abs_shap": 0.26532246078686983
+    },
+    {
+      "feature": "Flow Bytes/s",
+      "mean_abs_shap": 0.0819407885408921
+    },
+    {
+      "feature": "Init_Win_bytes_forward",
+      "mean_abs_shap": 0.07286236071428734
+    },
+    {
+      "feature": "Avg Fwd Segment Size",
+      "mean_abs_shap": 0.05715158827766783
+    },
+    {
+      "feature": "Fwd Header Length.1",
+      "mean_abs_shap": 0.038944920238484663
+    },
+    {
+      "feature": "Fwd Header Length",
+      "mean_abs_shap": 0.00865099552819215
+    },
+    {
+      "feature": "Fwd IAT Min",
+      "mean_abs_shap": 0.004909305029122835
+    },
+    {
+      "feature": "Bwd IAT Max",
+      "mean_abs_shap": 0.001817415305925164
+    },
+    {
+      "feature": "Max Packet Length",
+      "mean_abs_shap": 0.0013089385286997248
+    },
+    {
+      "feature": "Min Packet Length",
+      "mean_abs_shap": 0.001102102439002043
+    }
+  ],
+  "plots": [
+    "global_feature_importance.png",
+    "shap_summary_plot.png"
+  ]
+}
