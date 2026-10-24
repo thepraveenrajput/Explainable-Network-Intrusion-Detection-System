@@ -1,76 +1,132 @@
 {
   "model_type": "DecisionTreeClassifier",
-  "node_count": 11,
-  "max_depth": 3,
+  "node_count": 31,
+  "max_depth": 7,
   "n_classes": 2,
-  "feature_count": 10,
+  "feature_count": 66,
   "feature_names": [
-    "Feature_0",
-    "Feature_1",
-    "Feature_2",
-    "Feature_3",
-    "Feature_4",
-    "Feature_5",
-    "Feature_6",
-    "Feature_7",
-    "Feature_8",
-    "Feature_9"
+    "Destination Port",
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Fwd Packet Length Max",
+    "Fwd Packet Length Min",
+    "Fwd Packet Length Mean",
+    "Fwd Packet Length Std",
+    "Bwd Packet Length Max",
+    "Bwd Packet Length Min",
+    "Bwd Packet Length Mean",
+    "Bwd Packet Length Std",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow IAT Max",
+    "Flow IAT Min",
+    "Fwd IAT Total",
+    "Fwd IAT Mean",
+    "Fwd IAT Std",
+    "Fwd IAT Max",
+    "Fwd IAT Min",
+    "Bwd IAT Total",
+    "Bwd IAT Mean",
+    "Bwd IAT Std",
+    "Bwd IAT Max",
+    "Bwd IAT Min",
+    "Fwd PSH Flags",
+    "Fwd Header Length",
+    "Bwd Header Length",
+    "Fwd Packets/s",
+    "Bwd Packets/s",
+    "Min Packet Length",
+    "Max Packet Length",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "FIN Flag Count",
+    "SYN Flag Count",
+    "PSH Flag Count",
+    "ACK Flag Count",
+    "URG Flag Count",
+    "Down/Up Ratio",
+    "Average Packet Size",
+    "Avg Fwd Segment Size",
+    "Avg Bwd Segment Size",
+    "Fwd Header Length.1",
+    "Subflow Fwd Packets",
+    "Subflow Fwd Bytes",
+    "Subflow Bwd Packets",
+    "Subflow Bwd Bytes",
+    "Init_Win_bytes_forward",
+    "Init_Win_bytes_backward",
+    "act_data_pkt_fwd",
+    "min_seg_size_forward",
+    "Active Mean",
+    "Active Std",
+    "Active Max",
+    "Active Min",
+    "Idle Mean",
+    "Idle Std",
+    "Idle Max",
+    "Idle Min"
   ],
   "nodes": [
     {
       "node_id": 0,
       "is_leaf": false,
-      "feature_index": 1,
-      "feature_name": "Feature_1",
-      "threshold": -0.14697076380252838,
+      "feature_index": 8,
+      "feature_name": "Fwd Packet Length Mean",
+      "threshold": 0.014705882407724857,
       "left_child": 1,
-      "right_child": 6,
-      "predicted_class": 0,
+      "right_child": 14,
+      "predicted_class": 1,
       "probabilities": [
-        0.53,
-        0.47
+        0.44525,
+        0.55475
       ]
     },
     {
       "node_id": 1,
       "is_leaf": false,
-      "feature_index": 0,
-      "feature_name": "Feature_0",
-      "threshold": 0.886987954378128,
+      "feature_index": 14,
+      "feature_name": "Flow Bytes/s",
+      "threshold": -0.6723904311656952,
       "left_child": 2,
-      "right_child": 5,
-      "predicted_class": 0,
+      "right_child": 11,
+      "predicted_class": 1,
       "probabilities": [
-        0.8444444444444444,
-        0.15555555555555556
+        0.06649778340721976,
+        0.9335022165927802
       ]
     },
     {
       "node_id": 2,
       "is_leaf": false,
-      "feature_index": 5,
-      "feature_name": "Feature_5",
-      "threshold": -0.7726908922195435,
+      "feature_index": 28,
+      "feature_name": "Bwd IAT Max",
+      "threshold": 6355555.75,
       "left_child": 3,
-      "right_child": 4,
+      "right_child": 10,
       "predicted_class": 0,
       "probabilities": [
-        0.9736842105263158,
-        0.02631578947368421
+        0.9309309309309309,
+        0.06906906906906907
       ]
     },
     {
       "node_id": 3,
-      "is_leaf": true,
-      "feature_index": -2,
-      "feature_name": null,
-      "threshold": -2.0,
-      "left_child": -1,
-      "right_child": -1,
+      "is_leaf": false,
+      "feature_index": 31,
+      "feature_name": "Fwd Header Length",
+      "threshold": 2.1428571939468384,
+      "left_child": 4,
+      "right_child": 5,
       "predicted_class": 0,
       "probabilities": [
-        0.8,
-        0.2
+        0.9597523219814241,
+        0.04024767801857585
       ]
     },
     {
@@ -89,30 +145,30 @@
     },
     {
       "node_id": 5,
-      "is_leaf": true,
-      "feature_index": -2,
-      "feature_name": null,
-      "threshold": -2.0,
-      "left_child": -1,
-      "right_child": -1,
-      "predicted_class": 1,
+      "is_leaf": false,
+      "feature_index": 24,
+      "feature_name": "Fwd IAT Min",
+      "threshold": 3957.83341217041,
+      "left_child": 6,
+      "right_child": 9,
+      "predicted_class": 0,
       "probabilities": [
-        0.14285714285714285,
-        0.8571428571428571
+        0.6578947368421053,
+        0.34210526315789475
       ]
     },
     {
       "node_id": 6,
       "is_leaf": false,
-      "feature_index": 0,
-      "feature_name": "Feature_0",
-      "threshold": -0.6660366356372833,
+      "feature_index": 18,
+      "feature_name": "Flow IAT Max",
+      "threshold": 0.04857909306883812,
       "left_child": 7,
       "right_child": 8,
       "predicted_class": 1,
       "probabilities": [
-        0.2727272727272727,
-        0.7272727272727273
+        0.07142857142857142,
+        0.9285714285714286
       ]
     },
     {
@@ -123,24 +179,24 @@
       "threshold": -2.0,
       "left_child": -1,
       "right_child": -1,
-      "predicted_class": 0,
+      "predicted_class": 1,
       "probabilities": [
-        1.0,
-        0.0
+        0.0,
+        1.0
       ]
     },
     {
       "node_id": 8,
-      "is_leaf": false,
-      "feature_index": 0,
-      "feature_name": "Feature_0",
-      "threshold": -0.27450715005397797,
-      "left_child": 9,
-      "right_child": 10,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
       "predicted_class": 1,
       "probabilities": [
-        0.047619047619047616,
-        0.9523809523809523
+        0.2,
+        0.8
       ]
     },
     {
@@ -151,10 +207,10 @@
       "threshold": -2.0,
       "left_child": -1,
       "right_child": -1,
-      "predicted_class": 1,
+      "predicted_class": 0,
       "probabilities": [
-        0.2222222222222222,
-        0.7777777777777778
+        1.0,
+        0.0
       ]
     },
     {
@@ -169,6 +225,286 @@
       "probabilities": [
         0.0,
         1.0
+      ]
+    },
+    {
+      "node_id": 11,
+      "is_leaf": false,
+      "feature_index": 54,
+      "feature_name": "Init_Win_bytes_forward",
+      "threshold": -0.0003108915698248893,
+      "left_child": 12,
+      "right_child": 13,
+      "predicted_class": 1,
+      "probabilities": [
+        0.0011353315168029065,
+        0.9988646684831971
+      ]
+    },
+    {
+      "node_id": 12,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 13,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 1,
+      "probabilities": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "node_id": 14,
+      "is_leaf": false,
+      "feature_index": 47,
+      "feature_name": "Avg Fwd Segment Size",
+      "threshold": 0.06512605212628841,
+      "left_child": 15,
+      "right_child": 18,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9950965369292063,
+        0.004903463070793748
+      ]
+    },
+    {
+      "node_id": 15,
+      "is_leaf": false,
+      "feature_index": 49,
+      "feature_name": "Fwd Header Length.1",
+      "threshold": 0.285714291036129,
+      "left_child": 16,
+      "right_child": 17,
+      "predicted_class": 0,
+      "probabilities": [
+        0.8378378378378378,
+        0.16216216216216217
+      ]
+    },
+    {
+      "node_id": 16,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 1,
+      "probabilities": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "node_id": 17,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 18,
+      "is_leaf": false,
+      "feature_index": 13,
+      "feature_name": "Bwd Packet Length Std",
+      "threshold": 1325.061767578125,
+      "left_child": 19,
+      "right_child": 30,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9987456883035434,
+        0.0012543116964565694
+      ]
+    },
+    {
+      "node_id": 19,
+      "is_leaf": false,
+      "feature_index": 29,
+      "feature_name": "Bwd IAT Min",
+      "threshold": 1683.5,
+      "left_child": 20,
+      "right_child": 27,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9993718592964824,
+        0.000628140703517588
+      ]
+    },
+    {
+      "node_id": 20,
+      "is_leaf": false,
+      "feature_index": 35,
+      "feature_name": "Min Packet Length",
+      "threshold": 7.583333253860474,
+      "left_child": 21,
+      "right_child": 22,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9996685449121644,
+        0.00033145508783559825
+      ]
+    },
+    {
+      "node_id": 21,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 22,
+      "is_leaf": false,
+      "feature_index": 36,
+      "feature_name": "Max Packet Length",
+      "threshold": 0.598591536283493,
+      "left_child": 23,
+      "right_child": 26,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9974747474747475,
+        0.0025252525252525255
+      ]
+    },
+    {
+      "node_id": 23,
+      "is_leaf": false,
+      "feature_index": 14,
+      "feature_name": "Flow Bytes/s",
+      "threshold": -0.6523653268814087,
+      "left_child": 24,
+      "right_child": 25,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9375,
+        0.0625
+      ]
+    },
+    {
+      "node_id": 24,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 25,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "node_id": 26,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 27,
+      "is_leaf": false,
+      "feature_index": 29,
+      "feature_name": "Bwd IAT Min",
+      "threshold": 2146.0,
+      "left_child": 28,
+      "right_child": 29,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9940119760479041,
+        0.005988023952095809
+      ]
+    },
+    {
+      "node_id": 28,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "node_id": 29,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 30,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        0.6,
+        0.4
       ]
     }
   ]
