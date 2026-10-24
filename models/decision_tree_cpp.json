@@ -1,0 +1,175 @@
+{
+  "model_type": "DecisionTreeClassifier",
+  "node_count": 11,
+  "max_depth": 3,
+  "n_classes": 2,
+  "feature_count": 10,
+  "feature_names": [
+    "Feature_0",
+    "Feature_1",
+    "Feature_2",
+    "Feature_3",
+    "Feature_4",
+    "Feature_5",
+    "Feature_6",
+    "Feature_7",
+    "Feature_8",
+    "Feature_9"
+  ],
+  "nodes": [
+    {
+      "node_id": 0,
+      "is_leaf": false,
+      "feature_index": 1,
+      "feature_name": "Feature_1",
+      "threshold": -0.14697076380252838,
+      "left_child": 1,
+      "right_child": 6,
+      "predicted_class": 0,
+      "probabilities": [
+        0.53,
+        0.47
+      ]
+    },
+    {
+      "node_id": 1,
+      "is_leaf": false,
+      "feature_index": 0,
+      "feature_name": "Feature_0",
+      "threshold": 0.886987954378128,
+      "left_child": 2,
+      "right_child": 5,
+      "predicted_class": 0,
+      "probabilities": [
+        0.8444444444444444,
+        0.15555555555555556
+      ]
+    },
+    {
+      "node_id": 2,
+      "is_leaf": false,
+      "feature_index": 5,
+      "feature_name": "Feature_5",
+      "threshold": -0.7726908922195435,
+      "left_child": 3,
+      "right_child": 4,
+      "predicted_class": 0,
+      "probabilities": [
+        0.9736842105263158,
+        0.02631578947368421
+      ]
+    },
+    {
+      "node_id": 3,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        0.8,
+        0.2
+      ]
+    },
+    {
+      "node_id": 4,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 5,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 1,
+      "probabilities": [
+        0.14285714285714285,
+        0.8571428571428571
+      ]
+    },
+    {
+      "node_id": 6,
+      "is_leaf": false,
+      "feature_index": 0,
+      "feature_name": "Feature_0",
+      "threshold": -0.6660366356372833,
+      "left_child": 7,
+      "right_child": 8,
+      "predicted_class": 1,
+      "probabilities": [
+        0.2727272727272727,
+        0.7272727272727273
+      ]
+    },
+    {
+      "node_id": 7,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 0,
+      "probabilities": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "node_id": 8,
+      "is_leaf": false,
+      "feature_index": 0,
+      "feature_name": "Feature_0",
+      "threshold": -0.27450715005397797,
+      "left_child": 9,
+      "right_child": 10,
+      "predicted_class": 1,
+      "probabilities": [
+        0.047619047619047616,
+        0.9523809523809523
+      ]
+    },
+    {
+      "node_id": 9,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 1,
+      "probabilities": [
+        0.2222222222222222,
+        0.7777777777777778
+      ]
+    },
+    {
+      "node_id": 10,
+      "is_leaf": true,
+      "feature_index": -2,
+      "feature_name": null,
+      "threshold": -2.0,
+      "left_child": -1,
+      "right_child": -1,
+      "predicted_class": 1,
+      "probabilities": [
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}
