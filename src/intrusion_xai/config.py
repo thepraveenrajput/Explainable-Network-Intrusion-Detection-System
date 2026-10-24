@@ -5,10 +5,14 @@ Centralizes paths, random seeds, model hyperparameters, and label definitions
 to prevent hardcoding and ensure reproducibility across all modules.
 """
 
+import os
 from pathlib import Path
 
 # Base Paths
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+
+# Set isolated cache directory for matplotlib before importing
+os.environ.setdefault("MPLCONFIGDIR", str(PROJECT_ROOT / ".cache" / "matplotlib"))
 DATA_DIR = PROJECT_ROOT / "data"
 DATA_RAW_DIR = DATA_DIR / "raw"
 DATA_PROCESSED_DIR = DATA_DIR / "processed"
