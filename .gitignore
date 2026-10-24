@@ -1,0 +1,58 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# C++ Build artifacts
+cpp/build/
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Large dataset files (keep raw & processed data directories, ignore bulk CSVs)
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.gz
+data/raw/*.pcap
+data/processed/*.csv
+data/processed/*.parquet
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Trained ML models and heavy binary artifacts
+models/*.joblib
+models/*.pkl
+models/*.onnx
+!models/README.md
+
+# Output artifacts that should not be tracked
+outputs/metrics/*.json
+outputs/plots/*.png
+outputs/reports/*.pdf
+!outputs/metrics/.gitkeep
+!outputs/plots/.gitkeep
+!outputs/reports/.gitkeep
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE & Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
